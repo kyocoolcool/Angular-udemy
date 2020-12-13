@@ -1,0 +1,21 @@
+<h3>hello servers</h3>
+<div class="container">
+<!--  <app-server></app-server>-->
+  <app-server *ngFor="let server of servers"></app-server>
+  <button class="btn btn-primary" [disabled]="serverName===''" (click)="onClickBtn()">{{btnName}}</button>
+</div>
+<p *ngIf="serverLook else noServer">{{serverStatus}}</p>
+<ng-template #noServer>
+  <p>no server display</p>
+</ng-template>
+
+<label>
+  <input type="text" class="form-control" (input)="changeText($event)">
+</label>
+<label>
+  <input type="text" class="form-control" [(ngModel)]="serverName">
+</label>
+{{serverName}}
+
+<input type="button" (click)="add()" value="add">
+<div *ngFor="let time of times ;let i = index" [ngStyle]="{backgroundColor:i>4 ?'red':'transparent'}">{{ time }}</div>
