@@ -1,4 +1,6 @@
 ## udemy Angular demo
+following this tutor    
+[Angular - The Complete Guide (2020 Edition)](https://www.udemy.com/course/the-complete-guide-to-angular-2/) 
 
 ### environment
 node version: v10.15.1  
