@@ -8,12 +8,14 @@ npm version: v6.4.1
 
 ### session list
 my-dread-app: session 1,2  
-angular-lab3: session 3,6,8
+angular-lab3: session 3,6,8,12
 cmp-databinding: session 5  
 directives-start: session 7  
 services-start: session 9
 directives-start: session 10
 routing-start: session 11
+prj-routing-final: 12 finished
+
 
 ### optional
 cmp-databinding-assignment-solution 5   

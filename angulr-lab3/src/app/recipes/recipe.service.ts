@@ -10,7 +10,7 @@ export class RecipeService {
   recipeSelected = new EventEmitter<Recipe>();
   private recipes: Recipe[] = [
     new Recipe('A test Recipe', 'This is simple a test',
-      'https://fitfoodiefinds.com/wp-content/uploads/2015/10/baked-oatmeal-recipes.jpg', [
+      'https://joyfoodsunshine.com/wp-content/uploads/2016/09/easy-pizza-casserole-recipe-4-500x500.jpg', [
         new Ingredient('Meet', 2),
         new Ingredient('Wins', 1),
       ]),
@@ -26,6 +26,10 @@ export class RecipeService {
 
   getRecipes(): Recipe[] {
     return this.recipes.slice();
+  }
+
+  getRecipe(index: number) {
+    return this.recipes.slice()[index];
   }
 
   addIngredientsToShippingList(ingredients: Ingredient[]) {
